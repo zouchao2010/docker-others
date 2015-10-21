@@ -28,7 +28,7 @@ docker run  --name mongo \
 
 ## start|stop|restart(已存在的容器)
 ```shell
-docker start|stop|restart liquibook
+docker start|stop|restart mongo
 
 ```
 
