@@ -19,6 +19,7 @@ docker run  --name mongo \
 ## run(创建并运行一个容器，以守护进程方式)
 ```shell
 docker run  --name mongo \
+            --restart=always \
             -h mongo \
             -p 27017:27017 \
             -v /data/mongo:/data/db \

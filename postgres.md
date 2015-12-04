@@ -21,6 +21,7 @@ docker run  --name postgres \
 ## run(创建并运行一个容器，以守护进程方式)
 ```shell
 docker run  --name postgres \
+            --restart=always \
             -h postgres \
             -p 5432:5432 \
             -v /data/postgres:/var/lib/postgresql/data \
