@@ -20,6 +20,7 @@ docker run  --name mongo \
 ```shell
 docker run  --name mongo \
             --restart=always \
+            -m 1024m \
             -h mongo \
             -p 27017:27017 \
             -v /data/mongo:/data/db \

@@ -20,6 +20,7 @@ docker run  --name redis \
 ```shell
 docker run  --name redis \
             --restart=always \
+            -m 1024m \
             -h redis \
             -p 6379:6379 \
             -v /data/redis:/data \

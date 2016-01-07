@@ -19,6 +19,7 @@ docker run  --name memcached \
 ```shell
 docker run  --name memcached \
             --restart=always \
+            -m 1024m \
             -h memcached \
             -p 11211:11211 \
             -dt memcached

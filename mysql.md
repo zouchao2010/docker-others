@@ -21,6 +21,7 @@ docker run  --name mysql \
 ```shell
 docker run  --name mysql \
             --restart=always \
+            -m 1024m \
             -h mysql \
             -p 3306:3306 \
             -v /data/mysql:/var/lib/mysql \

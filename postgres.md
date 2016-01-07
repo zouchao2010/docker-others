@@ -22,6 +22,7 @@ docker run  --name postgres \
 ```shell
 docker run  --name postgres \
             --restart=always \
+            -m 1024m \
             -h postgres \
             -p 5432:5432 \
             -v /data/postgres:/var/lib/postgresql/data \
